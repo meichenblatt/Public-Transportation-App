@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="TransApp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <base href="/">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Public Transportation App</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="text-center">
+                    <a href="/">
+                        <h2>Public Transportation App</h2>
+                    </a>
+                </div>             
+            </div>            
+
+        </div>
+        
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="row" ng-view="">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!--Angular-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+
+    <!--Application-->
+    <script src="js/app.js"></script>
+    <script src="js/indexdb.js"></script>
+    <!--Application Controllers-->
+    <script src="controllers/home.js"></script>
+    <script src="controllers/route.js"></script>
+    
+</body>
+</html>

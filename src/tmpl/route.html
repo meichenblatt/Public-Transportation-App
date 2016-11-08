@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-md-12">
+		<br>
+		<div class="alert alert-warning" ng-if="message">
+		   Sorry there are no more trips on this route today.
+		</div>
+		<div class="panel panel-default" ng-repeat="trip in trips">		  
+		  <div class="panel-body">
+
+		  	<div class="row">
+				<div class="col-md-4">
+					<p><b>Depart Time</b></p>
+					<p>{{trip.depart}}</p>
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					<p><b>Arrival Time</b></p>
+					<p>{{trip.arrive}}</p>
+				</div>
+			</div>
+		  	
+		  </div>		  
+		</div>
+
+	</div>
+</div>
+
+
